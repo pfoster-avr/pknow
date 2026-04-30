@@ -7,6 +7,8 @@ Papers go in the papers folder, prompts go in the prompts folder, etc.
 
 This index gives one line listings+links in outline format of what's in this repo.
 
+- [AI Practices](ai_practices) Lessons on working with AI tools
+  - [Hallucination Patterns](ai_practices/hallucination_patterns.md) AI invents plausible technical reasons; verify with code/data
 - [Papers](papers)☆  Academic papers referenced by this repo
 - [Prompts](prompts)☆ AI prompts I've found useful
 - [Index](index.md) Start here
