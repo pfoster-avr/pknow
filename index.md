@@ -10,6 +10,7 @@ This index gives one line listings+links in outline format of what's in this rep
 - [AI Practices](ai_practices) Lessons on working with AI tools
   - [Hallucination Patterns](ai_practices/hallucination_patterns.md) AI invents plausible technical reasons; verify with code/data
 - [Git](git) Git tips and techniques
+  - [Find Reverted Commits](git/find_reverted_commits.md) Identify commits/files fully reverted before HEAD, to guide rebase
   - [Manual Merge](git/manual_merge.md) Force all hunks to conflict so you resolve everything by hand
 - [Papers](papers)☆  Academic papers referenced by this repo
 - [Prompts](prompts)☆ AI prompts I've found useful
