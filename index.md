@@ -12,6 +12,7 @@ This index gives one line listings+links in outline format of what's in this rep
 - [Git](git) Git tips and techniques
   - [Find Reverted Commits](git/find_reverted_commits.md) Identify commits/files fully reverted before HEAD, to guide rebase
   - [Manual Merge](git/manual_merge.md) Force all hunks to conflict so you resolve everything by hand
+  - [Snapshot a Conflicted State](git/snapshot_conflicted_state.md) Capture the mid-conflict tree (markers and all) without clearing the conflict, to record the resolution
 - [Papers](papers)☆  Academic papers referenced by this repo
 - [Prompts](prompts)☆ AI prompts I've found useful
 - [Index](index.md) Start here
