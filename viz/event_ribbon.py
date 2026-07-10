@@ -97,7 +97,10 @@ import os
 import time
 from datetime import datetime, timezone
 
-import numpy as np
+try:
+    import numpy as np
+except ImportError as e:  # pragma: no cover
+    raise SystemExit('event_ribbon requires numpy and Pillow: pip install numpy pillow') from e
 from PIL import Image, ImageDraw, ImageFont
 
 Image.MAX_IMAGE_PIXELS = None
