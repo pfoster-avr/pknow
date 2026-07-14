@@ -3,11 +3,14 @@ name: minimal-timeless-summary
 description: >-
   Distill a long AI-agent session transcript into a minimal, correct, timeless
   summary — the durable facts a future reader needs — while dropping the
-  crash-and-fix saga and operational noise. Use when asked to summarize a
-  conversation/session/transcript for keeping (not a full replay), to write the
+  crash-and-fix saga and operational noise. Use whenever the user wants to
+  summarize, distill, condense, or "save the important parts" of a
+  conversation / session / transcript / log for keeping, to write the
   "Conversation Summary" that follows a Context block, or to "apply the timeless
-  summary prompt" to a log. Works on any session shape (build, experiment,
-  research, ops/debugging, open-ended goal).
+  summary prompt" — even if they don't say the word "skill". Works on any
+  session shape (build, experiment, research, ops/debugging, open-ended goal).
+  NOT for a turn-by-turn or ordered replay that must preserve every message
+  verbatim (that is a separate lossless-compaction prompt).
 ---
 
 # Minimal Timeless Summary
