@@ -15,6 +15,8 @@ This index gives one line listings+links in outline format of what's in this rep
   - [Snapshot a Conflicted State](git/snapshot_conflicted_state.md) Capture the mid-conflict tree (markers and all) without clearing the conflict, to record the resolution
 - [Papers](papers)☆  Academic papers referenced by this repo
 - [Prompts](prompts)☆ AI prompts I've found useful
+- [Skills](skills) Reusable agent skills
+  - [Minimal Timeless Summary](skills/minimal_timeless_summary/SKILL.md) Distill a session transcript to the durable facts, dropping the crash-and-fix saga ([prompt](prompts/minimal_timeless_summary.md))
 - [Viz](viz) Visualization tools
   - [Event Ribbon](viz/event_ribbon.md) Render many year-long event streams as one grayscale PNG strip chart ([script](viz/event_ribbon.py))
 - [Index](index.md) Start here
