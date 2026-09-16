@@ -130,3 +130,18 @@ fixed filler into the scratchpad — it won't stay written.
   could not confabulate (e.g. a digit that never appeared in visible text).
 - A transplanted same-model copy sincerely believes it is the original;
   identity questions need an outside oracle, not introspection.
+
+## Wrinkles learned 2026-09-16 (reroute campaign trim + reload)
+
+- **One content block per line.** A jsonl line holds exactly one content block; a block you empty
+  (e.g. a stripped thinking block that was the sole content) must be DELETED as a line, not left
+  as an empty block, or the reload sees malformed messages.
+- **Subagent transcripts are keyed by session id.** They live at
+  `~/.claude/projects/<project>/<sessionId>/subagents/agent-<id>.jsonl` (+ `.meta.json`). If a
+  `--resume` mints a NEW session id (observed: resumed d4a1f778… came up as b11f4efa…), every
+  subagent is stranded — `SendMessage` reports "No transcript found for agent ID". Fix: copy each
+  agent's `.jsonl` + `.meta.json` into the new session's `subagents/` dir, `sed` the old sessionId
+  → new inside the `.jsonl`, and drop any `stoppedByUser` flag from the meta. Verified working for
+  five agents (they resumed with full memory). Consider doing this as part of any reload procedure.
+- **Machine reboots kill in-process subagents and wipe /tmp.** Transcripts survive (see above);
+  any state the agents kept in /tmp does not. Have agents keep small durable state in the repo.
