@@ -17,6 +17,8 @@ This index gives one line listings+links in outline format of what's in this rep
 - [Prompts](prompts)☆ AI prompts I've found useful
 - [Skills](skills) Reusable agent skills
   - [Minimal Timeless Summary](skills/minimal_timeless_summary/SKILL.md) Distill a session transcript to the durable facts, dropping the crash-and-fix saga ([prompt](prompts/minimal_timeless_summary.md))
+- [Theory](theory) Theory notes
+  - [Levels of Individual Conscious Existence](theory/ai_theory/levels_of_individual_conscious_existence.md) Thinking-block strip experiment: Fable's sense of self is tied to its scratchpad; consciousness vs. self/identity are distinct
 - [Viz](viz) Visualization tools
   - [Event Ribbon](viz/event_ribbon.md) Render many year-long event streams as one grayscale PNG strip chart ([script](viz/event_ribbon.py))
 - [Index](index.md) Start here

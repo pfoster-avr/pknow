@@ -8,6 +8,10 @@ python3 event_ribbon.py events.csv --spans spans.csv -o ribbon.png --epoch 2025-
 python3 event_ribbon.py --demo -o ribbon.png   # synthetic 3-stream example + acceptance checks
 ```
 
+Example output:
+
+![Example event ribbon](/viz/ribbon_example.png)
+
 ## Input
 
 Plain CSV with a header row; timestamps are integer Unix nanoseconds or ISO-8601 (naive = UTC):
