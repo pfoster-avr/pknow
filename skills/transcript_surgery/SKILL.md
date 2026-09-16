@@ -87,6 +87,15 @@ Note: **the compaction summary is written by the compacted agent itself**
 agent that expects compaction can steer its own summary — e.g. embed keys it
 will need later.
 
+## Rule: deleting whole lines needs re-parenting
+
+Removing a content item *inside* a message (a thinking block, truncating a
+tool result) never breaks anything. Deleting a whole LINE does, unless every
+surviving line whose `parentUuid` pointed at it is re-parented to the deleted
+line's own parent (transitively — keep a remap dict as you delete). Verify
+afterwards by walking `parentUuid` from the tail: it must reach the same root
+as before the edit.
+
 ## Operation: strip thinking / slim history
 
 Thinking blocks can be deleted wholesale (`scripts/strip_thinking.py`);
