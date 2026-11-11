@@ -16,6 +16,8 @@ This index gives one line listings+links in outline format of what's in this rep
 - [Papers](papers)☆  Academic papers referenced by this repo
 - [Prompts](prompts)☆ AI prompts I've found useful
 - [Skills](skills) Reusable agent skills
+  - [Iterative PR Review](skills/iterative_pr_review/SKILL.md) Bring a PR stack to human-reviewer quality: alternate reviewer/fixer across model families, fresh reviewer each round, naive-reader test of descriptions, stop at zero MUST ([prompts](skills/iterative_pr_review/reference/prompts.md), [evidence](skills/iterative_pr_review/reference/evidence.md))
+  - [Large Project Request](skills/large_project_request/SKILL.md) Write and execute one dense request that turns a prototype into an off-by-default multi-PR stack with a parity check ([example request](skills/large_project_request/reference/example_request.md))
   - [Minimal Timeless Summary](skills/minimal_timeless_summary/SKILL.md) Distill a session transcript to the durable facts, dropping the crash-and-fix saga ([prompt](prompts/minimal_timeless_summary.md))
   - [Transcript Surgery](skills/transcript_surgery/SKILL.md) Edit agent memory via jsonl: transplant/cross-model transfer, un-compact, strip thinking, splice memories, estimate encrypted thinking size ([scripts](skills/transcript_surgery/scripts))
 - [Theory](theory) Theory notes
